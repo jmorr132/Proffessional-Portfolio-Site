@@ -1,7 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
-
+# Renders Home/Index Page
 def index(request):
-    return HttpResponse("<h2> Hello Beautiful! </>")
+    return render(request, 'blog/home.html')
