@@ -1,6 +1,25 @@
 body {
-    background: url('background.jpg');
+    background: url('test.gif');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    font-family: 'Geo', sans-serif;
+    color: white;
+}
+
+.thumbnail{
+    background-color: steelblue;
+}
+
+.info-pane{
+    background-color: lightskyblue;
+}
+
+.test{
+    opacity: 1;
+}
+
+.pic{
+    margin: 100px;
+    border-radius: 150px;
 }

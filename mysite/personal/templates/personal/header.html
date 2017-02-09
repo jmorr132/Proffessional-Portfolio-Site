@@ -5,25 +5,30 @@
         <meta charset="utf-8"/>
         {% load staticfiles %}
         <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-            type ='text/css'/>
+        <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
+        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type ='text/css'/>
         <link rel='stylesheet' type="text/css" href="{% static 'personal/css/style.css' %}"/>
     </head>
     <body>
         <div class="section">
             <div class = "row">
                 <div class = "co-md-6 text-center">
-             <h1> Jason Morrissette </h1>
+                    <h1> Jason Morrissette </h1>
+                </div>
             </div>
-          </div>
-          <div class = "row">
-             <div class = "co-md-6 text-center">
-             <h2> Full Stack Web Developer</h1>
-         </div>
+            <div class = "row">
+                <div class = "co-md-6 text-center">
+                    <h2> Full Stack Web Developer</h2>
+                </div>
+            </div>
+
+        </div>
+<div class = "section">  
+    <div class="info-pane">
+            {% block content%}
+            {% endblock %}
     </div>
 </div>
-        {% block content%}
-        {% endblock %}
     </body>
     <footer>
         <a href ='/contact'> contact me </a>
